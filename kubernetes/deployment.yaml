@@ -24,6 +24,10 @@ spec:
       - image: brentley/ecsdemo-nodejs:latest
         imagePullPolicy: Always
         name: ecsdemo-nodejs
+        resources:
+          requests:
+            cpu: 100m
+            memory: 300Mi
         ports:
         - containerPort: 3000
           protocol: TCP
