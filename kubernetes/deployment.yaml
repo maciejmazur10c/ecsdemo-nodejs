@@ -25,12 +25,9 @@ spec:
         imagePullPolicy: Always
         name: ecsdemo-nodejs
         resources:
-          limits:
+          requests:
             cpu: 100m
             memory: 300Mi
-          requests:
-            cpu: 50m
-            memory: 150mi
         ports:
         - containerPort: 3000
           protocol: TCP
